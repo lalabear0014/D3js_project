@@ -51,7 +51,6 @@
                 // console.log(nDataSet);
                 bind(nDataSet, cases);
                 render(nDataSet);
-                btnList(dataSet);
             });
         });
         function mid(d){
@@ -149,31 +148,6 @@
                   });
                   d3.select("#tooltip").classed("hidden",true);
               });
-        }
-        function btnList(dataSet){
-            var dataArr = dataSet.map(function(d){
-                return d.country;
-            });
-            console.log(dataArr);
-            
-            // bind input ---------------------------------------
-            var selection = d3.select("body")
-                              .selectAll("input")
-                              .data(dataArr);
-            selection.enter().append("input");
-            selection.exit().remove();
-            
-            // render -------------------------------------------
-            d3.selectAll("body>input").attr({
-                type: "button",
-                value: function(d){ return d; }
-            })
-            .selectAll("path")
-            .on("click", function(d){
-                d3.select(this).attr({
-                    fill: "gold"
-                });
-            });
         }
     </script>
 </body>
