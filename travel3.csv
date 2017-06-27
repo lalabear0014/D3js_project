@@ -1,0 +1,391 @@
+year,country,number
+2002,Hong Kong,2418872 
+2002,Mainland China,1 
+2002,Japan,797460 
+2002,Korea,120208 
+2002,Singapore,190455 
+2002,Malaysia,186791 
+2002,Thailand,530945 
+2002,Philippines,128158 
+2002,Indonesia,259610 
+2002,Brunei,5850 
+2002,Vietnam,225733 
+2002,Macao,1269840 
+2002,Myanmar,19814 
+2002,Cambodia,0 
+2002,United States,532180 
+2002,Canada,132605 
+2002,France,28967 
+2002,Germany,18911 
+2002,Italy,16346 
+2002,Netherlands,129124 
+2002,Switzerland,4 
+2002,United Kingdom,25764 
+2002,Austria,24654 
+2002,Australia,70141 
+2002,New Zealand,35758 
+2002,Palau,15812 
+2003,Hong Kong,1869069 
+2003,Mainland China,44 
+2003,Japan,731330 
+2003,Korea,179893 
+2003,Singapore,125491 
+2003,Malaysia,121267 
+2003,Thailand,392414 
+2003,Philippines,91418 
+2003,Indonesia,251284 
+2003,Brunei,3770 
+2003,Vietnam,222487 
+2003,Macao,837936 
+2003,Myanmar,17152 
+2003,Cambodia,0 
+2003,United States,479264 
+2003,Canada,95226 
+2003,France,24245 
+2003,Germany,20524 
+2003,Italy,16367 
+2003,Netherlands,105885 
+2003,Switzerland,2 
+2003,United Kingdom,23432 
+2003,Austria,21754 
+2003,Australia,70679 
+2003,New Zealand,24819 
+2003,Palau,28388 
+2004,Hong Kong,2559705 
+2004,Mainland China,0 
+2004,Japan,1051954 
+2004,Korea,298325 
+2004,Singapore,160088 
+2004,Malaysia,180883 
+2004,Thailand,422189 
+2004,Philippines,112552 
+2004,Indonesia,283757 
+2004,Brunei,5795 
+2004,Vietnam,266115 
+2004,Macao,1038006 
+2004,Myanmar,18064 
+2004,Cambodia,0 
+2004,United States,536217 
+2004,Canada,112413 
+2004,France,26423 
+2004,Germany,25160 
+2004,Italy,24484 
+2004,Netherlands,128162 
+2004,Switzerland,0 
+2004,United Kingdom,34071 
+2004,Austria,22045 
+2004,Australia,75957 
+2004,New Zealand,21047 
+2004,Palau,41909 
+2005,Hong Kong,2807027 
+2005,Mainland China,0 
+2005,Japan,1180406 
+2005,Korea,368206 
+2005,Singapore,184926 
+2005,Malaysia,161296 
+2005,Thailand,268231 
+2005,Philippines,119125 
+2005,Indonesia,185348 
+2005,Brunei,296 
+2005,Vietnam,234009 
+2005,Macao,1163822 
+2005,Myanmar,15518 
+2005,Cambodia,0 
+2005,United States,578998 
+2005,Canada,104346 
+2005,France,26696 
+2005,Germany,33911 
+2005,Italy,25809 
+2005,Netherlands,121728 
+2005,Switzerland,0 
+2005,United Kingdom,33831 
+2005,Austria,39047 
+2005,Australia,87912 
+2005,New Zealand,20742 
+2005,Palau,31012 
+2006,Hong Kong,2993317 
+2006,Mainland China,0 
+2006,Japan,1214058 
+2006,Korea,396705 
+2006,Singapore,204834 
+2006,Malaysia,181911 
+2006,Thailand,379275 
+2006,Philippines,110041 
+2006,Indonesia,186165 
+2006,Brunei,276 
+2006,Vietnam,242852 
+2006,Macao,1232232 
+2006,Myanmar,14606 
+2006,Cambodia,0 
+2006,United States,593794 
+2006,Canada,93244 
+2006,France,29287 
+2006,Germany,33651 
+2006,Italy,20552 
+2006,Netherlands,93422 
+2006,Switzerland,0 
+2006,United Kingdom,39255 
+2006,Austria,42096 
+2006,Australia,76424 
+2006,New Zealand,21495 
+2006,Palau,26685 
+2007,Hong Kong,3030971 
+2007,Mainland China,0 
+2007,Japan,1280853 
+2007,Korea,457095 
+2007,Singapore,189835 
+2007,Malaysia,187788 
+2007,Thailand,353439 
+2007,Philippines,107824 
+2007,Indonesia,201358 
+2007,Brunei,670 
+2007,Vietnam,272020 
+2007,Macao,1196110 
+2007,Myanmar,13336 
+2007,Cambodia,0 
+2007,United States,587872 
+2007,Canada,87161 
+2007,France,27973 
+2007,Germany,37105 
+2007,Italy,17175 
+2007,Netherlands,85352 
+2007,Switzerland,0 
+2007,United Kingdom,38310 
+2007,Austria,38107 
+2007,Australia,75408 
+2007,New Zealand,17565 
+2007,Palau,28238 
+2008,Hong Kong,2851170 
+2008,Mainland China,188744 
+2008,Japan,1309847 
+2008,Korea,363122 
+2008,Singapore,167479 
+2008,Malaysia,157650 
+2008,Thailand,332997 
+2008,Philippines,114155 
+2008,Indonesia,186117 
+2008,Brunei,1233 
+2008,Vietnam,285263 
+2008,Macao,926593 
+2008,Myanmar,10608 
+2008,Cambodia,0 
+2008,United States,515590 
+2008,Canada,65393 
+2008,France,442 
+2008,Germany,38205 
+2008,Italy,14656 
+2008,Netherlands,98321 
+2008,Switzerland,169 
+2008,United Kingdom,39114 
+2008,Austria,34080 
+2008,Australia,66543 
+2008,New Zealand,10732 
+2008,Palau,15918 
+2009,Hong Kong,2261001 
+2009,Mainland China,1516087 
+2009,Japan,1113857 
+2009,Korea,388806 
+2009,Singapore,137348 
+2009,Malaysia,153695 
+2009,Thailand,258449 
+2009,Philippines,97372 
+2009,Indonesia,173429 
+2009,Brunei,216 
+2009,Vietnam,264819 
+2009,Macao,739263 
+2009,Myanmar,11570 
+2009,Cambodia,0 
+2009,United States,415465 
+2009,Canada,61893 
+2009,France,23518 
+2009,Germany,32797 
+2009,Italy,9726 
+2009,Netherlands,84535 
+2009,Switzerland,565 
+2009,United Kingdom,50621 
+2009,Austria,34829 
+2009,Australia,89793 
+2009,New Zealand,1 
+2009,Palau,13264 
+2010,Hong Kong,2308633 
+2010,Mainland China,2424242 
+2010,Japan,1377957 
+2010,Korea,406290 
+2010,Singapore,166126 
+2010,Malaysia,212509 
+2010,Thailand,350074 
+2010,Philippines,139762 
+2010,Indonesia,179845 
+2010,Brunei,714 
+2010,Vietnam,313987 
+2010,Macao,667910 
+2010,Myanmar,14097 
+2010,Cambodia,57078 
+2010,United States,436233 
+2010,Canada,63002 
+2010,France,23960 
+2010,Germany,31975 
+2010,Italy,7719 
+2010,Netherlands,43955 
+2010,Switzerland,919 
+2010,United Kingdom,36142 
+2010,Austria,26081 
+2010,Australia,74787 
+2010,New Zealand,997 
+2010,Palau,19951 
+2011,Hong Kong,2156760 
+2011,Mainland China,2846572 
+2011,Japan,1136394 
+2011,Korea,423266 
+2011,Singapore,207808 
+2011,Malaysia,209164 
+2011,Thailand,382635 
+2011,Philippines,178876 
+2011,Indonesia,212826 
+2011,Brunei,1628 
+2011,Vietnam,318587 
+2011,Macao,587633 
+2011,Myanmar,16263 
+2011,Cambodia,67341 
+2011,United States,404848 
+2011,Canada,67733 
+2011,France,31337 
+2011,Germany,35378 
+2011,Italy,9355 
+2011,Netherlands,85238 
+2011,Switzerland,1414 
+2011,United Kingdom,36376 
+2011,Austria,35901 
+2011,Australia,54889 
+2011,New Zealand,15962 
+2011,Palau,30079 
+2012,Hong Kong,2021212 
+2012,Mainland China,3139055 
+2012,Japan,1560300 
+2012,Korea,532729 
+2012,Singapore,241893 
+2012,Malaysia,193170 
+2012,Thailand,306746 
+2012,Philippines,211385 
+2012,Indonesia,198893 
+2012,Brunei,1100 
+2012,Vietnam,341511 
+2012,Macao,527050 
+2012,Myanmar,18380 
+2012,Cambodia,65599 
+2012,United States,469568 
+2012,Canada,66614 
+2012,France,30132 
+2012,Germany,36271 
+2012,Italy,12718 
+2012,Netherlands,83253 
+2012,Switzerland,64 
+2012,United Kingdom,38002 
+2012,Austria,39734 
+2012,Australia,49986 
+2012,New Zealand,1621 
+2012,Palau,37512 
+2013,Hong Kong,2038732 
+2013,Mainland China,3072327 
+2013,Japan,2346007 
+2013,Korea,518528 
+2013,Singapore,297588 
+2013,Malaysia,226919 
+2013,Thailand,507616 
+2013,Philippines,129361 
+2013,Indonesia,166378 
+2013,Brunei,2411 
+2013,Vietnam,361957 
+2013,Macao,514701 
+2013,Myanmar,23864 
+2013,Cambodia,61338 
+2013,United States,381374 
+2013,Canada,65086 
+2013,France,33000 
+2013,Germany,41122 
+2013,Italy,70 
+2013,Netherlands,22102 
+2013,Switzerland,0 
+2013,United Kingdom,1 
+2013,Austria,23487 
+2013,Australia,69824 
+2013,New Zealand,6 
+2013,Palau,27164 
+2014,Hong Kong,2018129 
+2014,Mainland China,3267238 
+2014,Japan,2971846 
+2014,Korea,626694 
+2014,Singapore,283925 
+2014,Malaysia,198902 
+2014,Thailand,419133 
+2014,Philippines,133583 
+2014,Indonesia,170301 
+2014,Brunei,298 
+2014,Vietnam,339107 
+2014,Macao,493188 
+2014,Myanmar,22817 
+2014,Cambodia,69195 
+2014,United States,425138 
+2014,Canada,70285 
+2014,France,39126 
+2014,Germany,44251 
+2014,Italy,0 
+2014,Netherlands,22749 
+2014,Switzerland,0 
+2014,United Kingdom,0 
+2014,Austria,26256 
+2014,Australia,85745 
+2014,New Zealand,0 
+2014,Palau,30471 
+2015,Hong Kong,2008153 
+2015,Mainland China,3403920 
+2015,Japan,3797879 
+2015,Korea,500100 
+2015,Singapore,318516 
+2015,Malaysia,201631 
+2015,Thailand,599523 
+2015,Philippines,180091 
+2015,Indonesia,176478 
+2015,Brunei,285 
+2015,Vietnam,409013 
+2015,Macao,527144 
+2015,Myanmar,19999 
+2015,Cambodia,66593 
+2015,United States,477156 
+2015,Canada,71079 
+2015,France,41185 
+2015,Germany,53043 
+2015,Italy,14 
+2015,Netherlands,30906 
+2015,Switzerland,0 
+2015,United Kingdom,0 
+2015,Austria,32835 
+2015,Australia,103806 
+2015,New Zealand,3 
+2015,Palau,14421 
+2016,Hong Kong,1902647 
+2016,Mainland China,3685477 
+2016,Japan,4295240 
+2016,Korea,808420 
+2016,Singapore,319915 
+2016,Malaysia,245298 
+2016,Thailand,532787 
+2016,Philippines,231801 
+2016,Indonesia,175738 
+2016,Brunei,540 
+2016,Vietnam,465944 
+2016,Macao,598850 
+2016,Myanmar,25196 
+2016,Cambodia,67281 
+2016,United States,527099 
+2016,Canada,93405 
+2016,France,46461 
+2016,Germany,66454 
+2016,Italy,13054 
+2016,Netherlands,32851 
+2016,Switzerland,5529 
+2016,United Kingdom,16321 
+2016,Austria,41934 
+2016,Australia,139501 
+2016,New Zealand,2804 
+2016,Palau,14203 
