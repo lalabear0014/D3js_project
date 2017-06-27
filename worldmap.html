@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="topojson.min.js"></script>
+    <style>
+        .map-boundary {
+          stroke: #eee;
+        }
+        #tooltip{
+          position: absolute;
+          /*left: 20px;*/
+          /*top:  100px;*/
+          background: #fff;
+          width: 150px;
+          height: auto;
+          padding: 0px 10px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+        }
+        #tooltip.hidden{
+          display: none;
+        }
+    </style>
+</head>
+<body>
+    <svg width="1200" height="700"></svg>
+    <div id="tooltip" class="hidden">
+      <p><strong id="city">Hello</strong></p>
+      <p id="number">tooltip</p>
+    </div>
+    <script>
+        var projection = d3.geo.mercator();
+            // 1.地理資料檔: GeoJSON or TopoJSON
+        d3.csv("travel2.csv",mid, function(dataSet) {
+            // console.log(dataSet);
+
+            var cases = [];
+            var nDataSet = d3.nest().key(function(d){
+                                        return d["country"];
+                                    })
+                                    .entries(dataSet);
+            nDataSet.forEach(function(d){
+                cases[d.key] = d.values[0].year_2002;
+            });
+            // console.log(nDataSet);
+            // console.log(cases);
+        
+            d3.json("topo.json", function(nDataSet) {
+                // console.log(nDataSet);
+                bind(nDataSet, cases);
+                render(nDataSet);
+                btnList(nDataSet);
+            });
+        });
+
+        function mid(d){
+            d.year_2002 = +d.year_2002;
+            d.year_2003 = +d.year_2003;
+            d.year_2003 = +d.year_2003;
+            d.year_2004 = +d.year_2004;
+            d.year_2005 = +d.year_2005;
+            d.year_2006 = +d.year_2006;
+            d.year_2007 = +d.year_2007;
+            d.year_2008 = +d.year_2008;
+            d.year_2009 = +d.year_2009;
+            d.year_2010 = +d.year_2010;
+            d.year_2011 = +d.year_2011;
+            d.year_2012 = +d.year_2012;
+            d.year_2013 = +d.year_2013;
+            d.year_2014 = +d.year_2014;
+            d.year_2015 = +d.year_2015;
+            d.year_2016 = +d.year_2016;
+            return d;
+        };
+                 
+        function render(nDataSet){
+            // 從這裡開始修改
+            // var fScale = d3.scale.category20();
+            console.log(nDataSet);
+            var fScale = d3.scale.linear()
+                                //  .domain([0,d3.max(nDataSet, function(d){
+                                //     return +d.num_2002;                               
+                                //  })])
+                                .domain([0,450000])
+                                .range(["#484891","#00E3E3"]);
+            // var tmp_color;
+            
+            d3.selectAll("path")
+            // .transition()
+            .attr({
+                fill: function(d,i){
+                    // return fScale(i);
+                    return fScale(d.properties.num_2002);
+                }
+            })
+            .on("mouseover", function(d){
+                  d3.select(this).attr({
+                      fill: "lightgreen"
+                  });
+
+                  var coordinates = d3.mouse(this);
+                  var x = coordinates[0];
+                  var y = coordinates[1];
+                  var tooltip = d3.select("#tooltip")
+                                  .style({
+                                      left: (+x+10)+"px",
+                                      top: (+y+10)+"px"
+                                  });
+
+                  tooltip.select("#city").text(d.properties.NAME);
+                  tooltip.select("#number").text(d.properties.num_2002);
+               
+                 // 替換tooltip內容(選擇其id後,修改內容)
+                 // 當mouseover，隱藏功能取消
+                tooltip.classed("hidden",false);
+              })
+              .on("mouseout", function(d){
+                  d3.select(this).attr({
+                      fill: function(d,i){
+                          return fScale(d.properties.num_2002);
+                      }
+                  });
+                  d3.select("#tooltip").classed("hidden",true);
+              });
+        }
+
+        function bind(topoRoot, dataSet){
+            // 2.地理投影器: 設定投影方式(麥卡托)、定位點([經度,緯度])、縮放(scale)
+            // var projection = d3.geo.mercator().center([121,24]).scale(8000);    
+            // var projection = d3.geo.mercator();    
+            
+            // 3.路徑產生器: d3.geo.path()
+            var path = d3.geo.path().projection(projection);
+            
+            // 4.地理資料檔: 使用topojson.js載入地理資料
+            var geoRoot = topojson.feature(topoRoot, topoRoot.objects["ne_10m_admin_0_countries"]);
+            // console.log(geoRoot);
+
+            geoRoot.features.forEach(function(d){
+                if(dataSet[d.properties.NAME]){
+                    d.properties.num_2002 = +dataSet[d.properties.NAME];
+                    // console.log(dataSet[d.properties.year_2002]);
+                    console.log(dataSet[d.properties.NAME]);
+                    // console.log(dataSet)
+                }
+                else{
+                    d.properties.num_2002 = 0;
+                }
+            });
+
+            // 綁定path與載入的地理資料(features:每一地理區劃)
+            var selection = d3.select("svg").selectAll("path").data(geoRoot.features);
+              
+            selection.enter().append("path").classed("map-boundary", true).attr("d", path);
+            selection.exit().remove(); 
+        }
+
+        function btnList(nDataSet){
+            
+        }
+    </script>
+</body>
+</html>

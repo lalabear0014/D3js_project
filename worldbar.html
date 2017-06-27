@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="topojson.min.js"></script>
+    <style>
+        .map-boundary {
+          stroke: #eee;
+        }
+        #tooltip{
+          position: absolute;
+          /*left: 20px;*/
+          /*top:  100px;*/
+          background: #fff;
+          width: 150px;
+          height: auto;
+          padding: 0px 10px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+        }
+        #tooltip.hidden{
+          display: none;
+        }
+    </style>
+</head>
+<body>
+    <svg width="1200" height="700"></svg>
+    <script>
+        // var svg = d3.select("body").append("svg").attr({
+        //    width: "1200",
+        //    height: "700"
+        // });
+
+        // svg.append("g").append("rect").attr({
+        //   fill: "white",
+        //   width: "100%",
+        //   height: "100%"
+        // });
+
+        // ----------------------------------------------
+
+        d3.csv("travel2.csv", mid, function(dataSet) {
+            console.log(dataSet);
+            bind(dataSet);
+            render();
+        });
+
+        function bind(dataSet){
+            var selection = d3.select("svg").selectAll("rect#bar").data(dataSet);
+            selection.enter().append("rect");
+            selection.exit().remove();
+
+            var selection_text = d3.select("svg").selectAll("text").data(dataSet);
+            selection_text.enter().append("text");
+            selection_text.exit().remove();
+        }
+        
+        function render(){
+          //不需要動畫的設定
+          d3.select("svg").selectAll("rect#bar").on("click",render);
+
+          //需要動畫的設定
+          d3.selectAll("rect#bar")
+            .attr({width: 10})
+            .transition().duration(2000).delay(function(d,i){ return i*500; })
+            .attr({width: 300})
+            .transition()
+            .attr({width: 100, fill:"rgb(0,255,0)"});
+        }
+
+        function mid(d){
+            d.year_2002 = +d.year_2002;
+            d.year_2003 = +d.year_2003;
+            d.year_2003 = +d.year_2003;
+            d.year_2004 = +d.year_2004;
+            d.year_2005 = +d.year_2005;
+            d.year_2006 = +d.year_2006;
+            d.year_2007 = +d.year_2007;
+            d.year_2008 = +d.year_2008;
+            d.year_2009 = +d.year_2009;
+            d.year_2010 = +d.year_2010;
+            d.year_2011 = +d.year_2011;
+            d.year_2012 = +d.year_2012;
+            d.year_2013 = +d.year_2013;
+            d.year_2014 = +d.year_2014;
+            d.year_2015 = +d.year_2015;
+            d.year_2016 = +d.year_2016;
+            return d;
+        };
+        
+    </script>
+</body>
+</html>
